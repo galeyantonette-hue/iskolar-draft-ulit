@@ -68,38 +68,29 @@ body {
 }
 
 /* Hero Section Background */
-/* Lower opacity background for homepage */
-.bg1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit; /* uses the background image */
-    opacity: 0.5; /* adjust opacity here */
-    z-index: -1; /* keep it behind the content */
+.bg1 {
+    background-image: url('!2bg1.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
 }
 
 .heading h1 {
-    color: #d4d5c5; 
-    font-size: 120px;
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
-    line-height: 1.1;
-    text-shadow: 2px 2px 4px #aaa;
-    text-align: center;
-    margin-top: 150px;
+    color: #d4d5c5;
+    font-size: 80px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
 .heading p {
     color: #ffe2cc;
-    font-size: 36px;
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
-    line-height: 1.2;
-    text-align: center;
-    margin-left: 0;
+    font-size: 28px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
 }
 
 /* Intro Section */
@@ -119,8 +110,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    text-align: justify;
-    line-height: 1.5;
 }
 
 .infoCard {
@@ -214,7 +203,3 @@ footer {
         font-size: 16px;
     }
 }
-
-
-
-
