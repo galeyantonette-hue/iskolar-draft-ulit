@@ -1,3 +1,4 @@
+/* Navigation Bar Header */
 .header .navbar {
     background: #7c2b2b;
     color: #fff;
@@ -6,6 +7,7 @@
     gap: 10px; 
     padding: 14px 20px;
     justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 .name {
@@ -23,13 +25,14 @@
     letter-spacing: 10px;
     font-size: 18px;
     padding: 14px 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 .nav a {
     color: #fff;
     margin: 0 8px;
     font-size: 14px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 .searchBar[type="search"]{
@@ -37,7 +40,7 @@
     border-radius: 18px;
     border: none;
     min-width: 160px;
-  }
+}
 
 /* Background */
 .bg1 {
@@ -55,10 +58,12 @@
     margin: 40px auto;
     max-width: 1100px;
     padding: 20px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 h2 {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 .file-list-box {
@@ -79,10 +84,12 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 .file-list-box button {
     margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
 .viewer {
@@ -96,13 +103,71 @@ h2 {
     border-radius: 10px;
 }
 
+/* INFO CARDS / SUBJECT SELECTION */
+.infoSection {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
 
-/* website footer */
+.infoCard {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffffdd, #f6f6f6ee);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 
+        0 4px 14px rgba(0,0,0,0.25),
+        0 8px 24px rgba(0,0,0,0.15) inset;
+    transition: 0.35s ease;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.infoCard:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 
+        0 8px 25px rgba(0,0,0,0.35),
+        0 0 18px rgba(255,220,190,0.6);
+}
+
+.infoCard p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* QUICK LINKS / SUBJECT BUTTONS */
+.subject-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #7c2b2b, #a83838);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.subject-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Footer */
 footer {
-  background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
-  color: white;
-  padding: 15px;
-  text-align: center;
-  margin-top: 50px;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
-}   
+    background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
