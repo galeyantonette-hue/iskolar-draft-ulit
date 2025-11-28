@@ -49,7 +49,7 @@
     <div class="signin-box">
 
         <div class="tabs">
-            <button class="tab" data-type="student">STUDENT</button>
+            <button class="tab active" data-type="student">STUDENT</button>
             <button class="tab" data-type="teacher">TEACHER</button>
         </div>
 
@@ -72,8 +72,15 @@
     <p>&copy; 2025 I.S.K.O.L.A.R. All rights reserved. <br>Need help? Email us at bsiteducationmanagementsystem@gmail.com</p>
 </footer>
   
-<script src="application.js"></script>
+<script>
+    const tabs = document.querySelectorAll('.tab');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+        });
+    });
+</script>
 </body>
-
 </html>
-
