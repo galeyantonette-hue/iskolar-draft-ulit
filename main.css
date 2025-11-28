@@ -129,6 +129,8 @@ body {
     padding: 25px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.15);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .infoCard:hover {
@@ -213,5 +215,6 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
