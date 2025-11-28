@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iskolar Sign In</title>
-    <link rel="stylesheet" href="application.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ISKOLAR — Sign In</title>
+  <link rel="stylesheet" href="application.css">
 </head>
-
 <body>
 
-    <section class="login-wrapper">
-
-        <div class="tab-container">
-            <button class="tab active" data-type="student">STUDENT</button>
-            <button class="tab" data-type="teacher">TEACHER</button>
+  <!-- header (same visual language as site) -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="name">
+        <div class="logo"><img src="ISKOLAR.png" alt="ISKOLAR logo"></div>
+        <div class="namePos">
+          ISKOLAR
+          <h3>Interactive System for Knowledge-Oriented Learning, Assistance, and Review</h3>
         </div>
+      </div>
 
-        <!-- SIGN IN FORM -->
-        <form>
-            <input type="text" placeholder="FULL NAME" id="fullname">
-            <input type="text" placeholder="SCHOOL" id="school">
-            <input type="email" placeholder="EMAIL" id="email">
-            <input type="text" placeholder="ID NUMBER" id="idnumber">
+      <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="subjectsmain.html">SUBJECTS</a>
+        <a href="application.html">SIGN IN</a>
+      </div>
 
-            <button type="submit" class="sign-btn">SIGN IN</button>
+      <div class="searchBar">
+        <input type="search" id="searchbar" placeholder="Search…">
+      </div>
+    </nav>
+  </header>
 
-            <div class="forgot">Forgot Password?</div>
-        </form>
+  <!-- main hero area: left big "SIGN IN" + right form card -->
+  <main class="signin-section">
 
-    </section>
+    <div class="left-blurb">
+      <h1>SIGN IN</h1>
+      <p>
+        Log in with your account to access modules, quizzes, and mock tests.
+        For educators, once logged in you may upload and check the progress of the students.
+      </p>
+    </div>
 
-    <script src="application.js"></script>
+    <div class="signin-box">
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-type="student" aria-selected="true">STUDENT</button>
+        <button class="tab" data-type="teacher" aria-selected="false">TEACHER</button>
+      </div>
+
+      <form id="loginForm" autocomplete="off" novalidate>
+        <input id="fullname" name="fullname" type="text" placeholder="FULL NAME" />
+        <input id="school" name="school" type="text" placeholder="SCHOOL" />
+        <input id="email" name="email" type="email" placeholder="EMAIL" />
+        <input id="idnum" name="idnum" type="text" placeholder="ID NUMBER" />
+
+        <div class="form-row">
+          <button type="submit" class="signin-btn">SIGN IN</button>
+          <a class="forgot" href="#">Forgot Password?</a>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <script src="application.js"></script>
 </body>
 </html>
