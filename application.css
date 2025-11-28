@@ -1,162 +1,157 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ------------------ NAVIGATION BAR ------------------ */
 
-body {
-    font-family: "Times New Roman", serif;
-}
-
-/* Background */
-.bg-login {
-    background-image: url('!bgLogin.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-/* Header */
 .header .navbar {
-    background: #7c2b2b;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-}
-
-.logo img {
-    width: 70px;
+  background: #7c2b2b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  justify-content: space-between;
 }
 
 .name {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+.logo {
     display: flex;
-    gap: 10px;
-    align-items: center;
+    align-items: left;
+    width: 70px;
 }
 
 .namePos {
-    font-size: 22px;
-    letter-spacing: 3px;
-    font-weight: bold;
-}
-
-.namePos h3 {
-    font-size: 10px;
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-size: 18px;
+    padding: 14px 20px;
 }
 
 .nav a {
-    text-decoration: none;
-    font-size: 16px;
-    margin: 0 18px;
     color: #fff;
-    transition: 0.3s;
+    margin: 0 12px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
-.nav a:hover {
-    color: #ffe2cc;
-}
-
-/* Search bar (same as homepage) */
-.search-wrapper input {
-    padding: 6px 12px;
+.searchBar[type="search"]{
+    padding: 6px 10px;
     border-radius: 18px;
     border: none;
-    width: 160px;
+    min-width: 160px;
 }
 
-/* Layout */
-.signin-section {
-    width: 90%;
-    margin: 70px auto;
+/* ------------------ BACKGROUND ------------------ */
+
+.bg1 {
+    background-image: url('!ISKOLAR4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150vh;
+}
+
+/* ------------------ ACCOUNT TYPE GRID ------------------ */
+
+.account-type-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.account-type-section {
+    text-align: center;
+}
+
+.account-buttons {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    color: white;
-}
-
-.signin-left {
-    width: 40%;
-}
-
-.signin-left h1 {
-    font-size: 65px;
-    font-weight: 900;
-}
-
-.signin-left p {
-    width: 80%;
+    justify-content: center;
     margin-top: 20px;
-    text-align: justify;
 }
 
-/* Sign-in Box */
-.signin-box {
-    width: 55%;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
-    border-radius: 25px;
-    padding: 35px;
-    color: #4a1a1a;
-}
-
-/* Tabs */
-.tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 25px;
-    font-weight: bold;
-}
-
-.tab {
-    flex: 1;
-    padding: 10px;
-    background: transparent;
-    border: none;
-    font-size: 20px;
-    color: #641c1c;
+.acc-btn {
+    background: #ffe5e5;
+    border: 2px solid #7c2b2b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 375px;
+    height: 200px;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    text-align: center;
 }
 
-.tab.active {
-    border-bottom: 2px solid #7c2b2b;
+.acc-btn:hover {
+    background: #f7d0d0;
 }
 
-/* Form Fields */
-form input {
+/* ACTIVE BUTTON STATE FOR TEACHER/STUDENT SELECTION */
+.active-account {
+    background: #903131 !important;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+/* IMG INSIDE BUTTON */
+.acc-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ------------------ SIGN-IN FORM ------------------ */
+
+.signin-container {
+    width: 350px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border: 2px solid #7c2b2b;
+    border-radius: 12px;
+}
+
+.signin-container h2 {
+    text-align: center;
+    color: #7c2b2b;
+}
+
+#signinForm input {
     width: 100%;
-    padding: 10px 5px;
-    margin: 12px 0;
-    border: none;
-    border-bottom: 1px solid #9a7070;
-    background: transparent;
-    outline: none;
-    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
 }
 
-.signin-btn {
-    width: 45%;
+#signinBtn {
+    margin-top: 20px;
+    width: 100%;
     padding: 12px;
     background: #7c2b2b;
-    color: white;
     border: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-size: 18px;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
-    float: right;
+    border-radius: 8px;
 }
 
-.forgot {
-    float: right;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #7c2b2b;
-    text-decoration: none;
+#signinBtn:hover {
+    background: #5a1f1f;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+  background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
 }
