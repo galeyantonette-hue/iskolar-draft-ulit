@@ -182,12 +182,28 @@ body {
     background: #5a1f1f;
 }
 
+/* Footer */
 footer {
-  background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
-  color: white;
-  padding: 15px;
-  text-align: center;
-  margin-top: 50px;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
-}   
+    background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
+    font-size: 14px;
+}
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 60px;
+    }
+
+    .heading p {
+        font-size: 22px;
+    }
+
+    .namePos {
+        font-size: 16px;
+    }
+}
