@@ -74,9 +74,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+
     display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    text-align: center;      /* center text inside */
     flex-direction: column;
-    justify-content: center;
     padding: 0 20px;
 }
 
@@ -92,6 +95,7 @@ body {
     margin-top: 10px;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
 }
+
 
 /* Intro Section */
 .div1 {
@@ -203,3 +207,4 @@ footer {
         font-size: 16px;
     }
 }
+
