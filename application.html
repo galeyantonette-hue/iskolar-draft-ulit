@@ -3,75 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISKOLAR | Sign In</title>
+    <title>I.S.K.O.L.A.R</title>
+
     <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="signin.css">
 </head>
 
-<body class="bg-login">
+<body class="bg1">
 
 <header class="header">
     <nav class="navbar">
-
+        
         <div class="name">
             <div class="logo">
-                <img src="!ISKOLAR.png" alt="ISKOLAR Logo">
+                <img src="!ISKOLAR.png" width="100%" height="100%">
             </div>
 
             <div class="namePos">
                 ISKOLAR
-                <h3>Interactive System for Knowledge-Oriented Learning, Assistance, and Review</h3>
+                <br>
+                <h3 style="font-size: 10px; letter-spacing: 1px; line-height: 1px;">
+                    Interactive System for Knowledge-Oriented Learning, Assistance, and Review
+                </h3>
             </div>
         </div>
 
         <nav class="nav">
-            <a href="index.html">HOME</a>
-            <a href="subjectsmain.html">SUBJECTS</a>
-            <a href="application.html">SIGN IN</a>
+            <a href="index.html">Home</a>
+            <a href="sbjctGuestmain.html">Subjects</a>
+            <a href="application.html">Sign-in</a>
         </nav>
 
-        <div class="search-wrapper">
-            <input type="search" placeholder="Search…" id="searchbar">
+        <div class="searchBar">
+            <input type="search" placeholder="Search…" aria-label="Search" id="searchbar"/>
         </div>
-
     </nav>
 </header>
 
+<!-- GRID: LEFT (buttons) + RIGHT (form) -->
+<div class="account-type-grid">
 
+    <!-- ACCOUNT TYPE SELECTION -->
+    <section class="account-type-section">
+        <h2 class="signin-container">Select Account Type</h2>
 
-<section class="signin-section">
-
-    <div class="signin-left">
-        <h1>SIGN IN</h1>
-        <p>
-            Log in with your account to access modules, quizzes, and mock tests.  
-            For educators, once logged in you may upload and check the progress of the students.
-        </p>
-    </div>
-
-    <div class="signin-box">
-
-        <div class="tabs">
-            <button class="tab active" data-type="student">STUDENT</button>
-            <button class="tab" data-type="teacher">TEACHER</button>
+        <div class="acc-btn-leftTop">
+            <div class="account-buttons">
+                <button id="teacherBtn" class="acc-btn">
+                    <img src="!Professor2.png" alt="Teacher" class="acc-img">
+                    <p>Teacher</p>
+                </button>
+            </div>
         </div>
 
-        <form id="loginForm">
+        <div class="acc-btn-leftBottom">
+            <div class="account-buttons">
+                <button id="studentBtn" class="acc-btn">
+                    <img src="!Student2.png" alt="Student" class="acc-img">
+                    <p>Student</p>
+                </button>
+            </div>
+        </div>
+    </section>
 
-            <input type="text" id="fullname" placeholder="FULL NAME">
-            <input type="text" id="school" placeholder="SCHOOL">
-            <input type="email" id="email" placeholder="EMAIL">
-            <input type="text" id="idnum" placeholder="ID NUMBER">
+    <!-- SIGN-IN FORM -->
+    <section class="signin-container">
+        <h2 id="formTitle">Sign In</h2>
 
-            <button type="submit" class="signin-btn">SIGN IN</button>
+        <form id="signinForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="school" placeholder="School" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="idnum" placeholder="ID Number" required>
 
-            <a class="forgot">Forgot Password?</a>
+            <button type="submit" id="signinBtn">Sign In</button>
         </form>
+    </section>
 
-    </div>
-
-</section>
+</div>
 
 <script src="application.js"></script>
+
 </body>
+
+<footer>
+    <p>&copy; 2025 I.S.K.O.L.A.R. All rights reserved.  
+    <br> Need help? Email us at bsiteducationmanagementsystem@gmail.com</p>
+</footer>
 
 </html>
