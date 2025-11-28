@@ -81,7 +81,7 @@ body {
     padding: 20px;
 }
 
-/* Container */
+/* Container for PDF Manager */
 .container {
     max-width: 1100px;
     width: 100%;
@@ -104,6 +104,18 @@ h2 {
 
 h3 {
     font-size: 22px;
+}
+
+/* PDF Viewer */
+.viewer {
+    margin-top: 30px;
+}
+
+#pdfViewer {
+    width: 100%;
+    height: 800px;
+    border: 2px solid #7c2b2b;
+    border-radius: 12px;
 }
 
 /* File List Box */
@@ -149,16 +161,58 @@ h3 {
     transform: scale(1.05);
 }
 
-/* PDF Viewer */
-.viewer {
-    margin-top: 30px;
+/* Subject Cards */
+.infoSection {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-#pdfViewer {
-    width: 100%;
-    height: 800px;
-    border: 2px solid #7c2b2b;
-    border-radius: 12px;
+.infoCard {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffffdd, #f6f6f6ee);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.infoCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Subject quick links/buttons */
+.subject-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #7c2b2b, #a83838);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.subject-info:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #a83838, #c74949);
+}
+
+/* Subject images */
+.subject-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -184,5 +238,10 @@ footer {
 
     .namePos {
         font-size: 16px;
+    }
+
+    .subject-img {
+        width: 150px;
+        height: 150px;
     }
 }
