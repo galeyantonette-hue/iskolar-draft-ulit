@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISKOLAR | Sign In</title>
+    <title>I.S.K.O.L.A.R</title>
     <link rel="stylesheet" href="application.css">
 </head>
 
@@ -25,7 +25,7 @@
 
         <nav class="nav">
             <a href="index.html">HOME</a>
-            <a href="subjectsmain.html">SUBJECTS</a>
+            <a href="sbjctGuestmain.html">SUBJECTS</a>
             <a href="application.html">SIGN IN</a>
         </nav>
 
@@ -35,8 +35,6 @@
 
     </nav>
 </header>
-
-
 
 <section class="signin-section">
 
@@ -51,20 +49,19 @@
     <div class="signin-box">
 
         <div class="tabs">
-            <button class="tab active" data-type="student">STUDENT</button>
+            <button class="tab" data-type="student">STUDENT</button>
             <button class="tab" data-type="teacher">TEACHER</button>
         </div>
 
         <form id="loginForm">
 
-            <input type="text" id="fullname" placeholder="FULL NAME">
-            <input type="text" id="school" placeholder="SCHOOL">
-            <input type="email" id="email" placeholder="EMAIL">
-            <input type="text" id="idnum" placeholder="ID NUMBER">
+            <input type="text" id="fullname" placeholder="FULL NAME" required>
+            <input type="text" id="school" placeholder="SCHOOL" required>
+            <input type="email" id="email" placeholder="EMAIL" required>
+            <input type="text" id="idnum" placeholder="ID NUMBER" required>
 
             <button type="submit" class="signin-btn">SIGN IN</button>
 
-            <a class="forgot">Forgot Password?</a>
         </form>
 
     </div>
@@ -79,3 +76,4 @@
 </body>
 
 </html>
+
