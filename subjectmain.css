@@ -48,10 +48,11 @@ body {
 
 .nav a {
     color: #fff;
-    margin: 0 10px;
-    font-size: 14px;
+    margin: 0 18px;
+    font-size: 16px;
     text-decoration: none;
-    transition: opacity 0.3s, color 0.3s;
+    opacity: 0.95;
+    transition: 0.3s ease;
 }
 
 .nav a:hover {
@@ -178,3 +179,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
