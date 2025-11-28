@@ -68,15 +68,19 @@ body {
 }
 
 /* Hero Section Background */
+/* Hero Section Background */
 .bg1 {
     background-image: url('!2bg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+
     display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    text-align: center;      /* center text inside */
     flex-direction: column;
-    justify-content: center;
     padding: 0 20px;
 }
 
@@ -203,3 +207,4 @@ footer {
         font-size: 16px;
     }
 }
+
