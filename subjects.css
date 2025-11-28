@@ -1,43 +1,72 @@
+/* Reset and body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: #040d01;
+    background-color: #fff;
+}
+
+/* Navigation Bar Header */
 .header .navbar {
     background: #7c2b2b;
     color: #fff;
     display: flex;
     align-items: center;
-    gap: 10px; 
-    padding: 14px 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    gap: 10px;
 }
 
 .name {
-    display: grid;
-    grid-template-columns: 70px 1fr;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.logo {
-    display: flex;
-    align-items: left;
+.logo img {
+    width: 70px;
+    height: auto;
 }
 
 .namePos {
     font-weight: 700;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
     font-size: 18px;
-    padding: 14px 20px;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+.namePos h3 {
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .nav a {
     color: #fff;
-    margin: 0 8px;
+    margin: 0 10px;
     font-size: 14px;
+    text-decoration: none;
+    transition: opacity 0.3s, color 0.3s;
 }
 
-.searchBar[type="search"]{
-    padding: 6px 10px;
+.nav a:hover {
+    opacity: 1;
+    color: #ffe2cc;
+}
+
+.searchBar input[type="search"] {
+    padding: 6px 12px;
     border-radius: 18px;
     border: none;
     min-width: 160px;
-  }
+}
 
 /* Background */
 .bg1 {
@@ -46,21 +75,38 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 150vh;
-    margin: 0;
-    padding-top: 0;
-}
-
-/* MAIN CONTENT */
-.container {
-    margin: 40px auto;
-    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
-h2 {
-    text-align: center;
+/* Container */
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Headings */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* File List Box */
 .file-list-box {
     margin-top: 20px;
 }
@@ -73,18 +119,37 @@ h2 {
 
 .file-list-box li {
     background: #f8f8f8;
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 8px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.file-list-box li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
 .file-list-box button {
-    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #7c2b2b, #a83838);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
 
+.file-list-box button:hover {
+    background: linear-gradient(90deg, #a83838, #c74949);
+    transform: scale(1.05);
+}
+
+/* PDF Viewer */
 .viewer {
     margin-top: 30px;
 }
@@ -92,17 +157,32 @@ h2 {
 #pdfViewer {
     width: 100%;
     height: 800px;
-    border: 1px solid #7c2b2b;
-    border-radius: 10px;
+    border: 2px solid #7c2b2b;
+    border-radius: 12px;
 }
 
-
-/* website footer */
+/* Footer */
 footer {
-  background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
-  color: white;
-  padding: 15px;
-  text-align: center;
-  margin-top: 50px;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
-}   
+    background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.25);
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .namePos {
+        font-size: 16px;
+    }
+}
