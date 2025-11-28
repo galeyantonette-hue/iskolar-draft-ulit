@@ -61,7 +61,7 @@ body {
     color: #ffe2cc;
 }
 
-/* Search bar (same as homepage) */
+/* Search bar */
 .search-wrapper input {
     padding: 6px 12px;
     border-radius: 18px;
@@ -117,15 +117,23 @@ body {
     flex: 1;
     padding: 10px;
     background: transparent;
-    border: none;
+    border: 2px solid #641c1c;
+    border-radius: 10px;
     font-size: 20px;
     color: #641c1c;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.tab:hover {
+    background-color: #f28b8b;
+    color: white;
 }
 
 .tab.active {
-    border-bottom: 2px solid #7c2b2b;
+    background-color: #b71c1c;
+    color: white;
 }
 
 /* Form Fields */
@@ -162,10 +170,10 @@ form input {
 }
 
 footer {
-  background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
-  color: white;
-  padding: 15px;
-  text-align: center;
-  margin-top: 50px;
-  box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
+    background: linear-gradient(90deg, #5e1f1f, #8b2f2f);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.35);
 } 
