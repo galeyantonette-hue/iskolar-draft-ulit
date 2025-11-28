@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ISKOLAR — Sign In</title>
-  <link rel="stylesheet" href="application.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISKOLAR | Sign In</title>
+    <link rel="stylesheet" href="application.css">
 </head>
-<body>
 
-  <!-- header (same visual language as site) -->
-  <header class="header">
+<body class="bg-login">
+
+<header class="header">
     <nav class="navbar">
-      <div class="name">
-        <div class="logo"><img src="ISKOLAR.png" alt="ISKOLAR logo"></div>
-        <div class="namePos">
-          ISKOLAR
-          <h3>Interactive System for Knowledge-Oriented Learning, Assistance, and Review</h3>
+
+        <div class="name">
+            <div class="logo">
+                <img src="!ISKOLAR.png" alt="ISKOLAR Logo">
+            </div>
+
+            <div class="namePos">
+                ISKOLAR
+                <h3>Interactive System for Knowledge-Oriented Learning, Assistance, and Review</h3>
+            </div>
         </div>
-      </div>
 
-      <div class="nav">
-        <a href="index.html">HOME</a>
-        <a href="subjectsmain.html">SUBJECTS</a>
-        <a href="application.html">SIGN IN</a>
-      </div>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="subjectsmain.html">SUBJECTS</a>
+            <a href="application.html">SIGN IN</a>
+        </nav>
 
-      <div class="searchBar">
-        <input type="search" id="searchbar" placeholder="Search…">
-      </div>
+        <div class="search-wrapper">
+            <input type="search" placeholder="Search…" id="searchbar">
+        </div>
+
     </nav>
-  </header>
+</header>
 
-  <!-- main hero area: left big "SIGN IN" + right form card -->
-  <main class="signin-section">
 
-    <div class="left-blurb">
-      <h1>SIGN IN</h1>
-      <p>
-        Log in with your account to access modules, quizzes, and mock tests.
-        For educators, once logged in you may upload and check the progress of the students.
-      </p>
+
+<section class="signin-section">
+
+    <div class="signin-left">
+        <h1>SIGN IN</h1>
+        <p>
+            Log in with your account to access modules, quizzes, and mock tests.  
+            For educators, once logged in you may upload and check the progress of the students.
+        </p>
     </div>
 
     <div class="signin-box">
 
-      <div class="tabs" role="tablist">
-        <button class="tab active" data-type="student" aria-selected="true">STUDENT</button>
-        <button class="tab" data-type="teacher" aria-selected="false">TEACHER</button>
-      </div>
-
-      <form id="loginForm" autocomplete="off" novalidate>
-        <input id="fullname" name="fullname" type="text" placeholder="FULL NAME" />
-        <input id="school" name="school" type="text" placeholder="SCHOOL" />
-        <input id="email" name="email" type="email" placeholder="EMAIL" />
-        <input id="idnum" name="idnum" type="text" placeholder="ID NUMBER" />
-
-        <div class="form-row">
-          <button type="submit" class="signin-btn">SIGN IN</button>
-          <a class="forgot" href="#">Forgot Password?</a>
+        <div class="tabs">
+            <button class="tab active" data-type="student">STUDENT</button>
+            <button class="tab" data-type="teacher">TEACHER</button>
         </div>
-      </form>
+
+        <form id="loginForm">
+
+            <input type="text" id="fullname" placeholder="FULL NAME">
+            <input type="text" id="school" placeholder="SCHOOL">
+            <input type="email" id="email" placeholder="EMAIL">
+            <input type="text" id="idnum" placeholder="ID NUMBER">
+
+            <button type="submit" class="signin-btn">SIGN IN</button>
+
+            <a class="forgot">Forgot Password?</a>
+        </form>
 
     </div>
-  </main>
 
-  <script src="application.js"></script>
+</section>
+
+<footer>
+    <p>&copy; 2025 I.S.K.O.L.A.R. All rights reserved. <br>Need help? Email us at bsiteducationmanagementsystem@gmail.com</p>
+</footer>
+  
+<script src="application.js"></script>
 </body>
+
 </html>
