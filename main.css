@@ -85,16 +85,22 @@ body {
 }
 
 .heading h1 {
-    color: #d4d5c5;
-    font-size: 80px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    color: #d4d5c5; 
+    font-size: 120px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px #aaa;
+    text-align: center;
+    margin-top: 150px;
 }
 
 .heading p {
     color: #ffe2cc;
-    font-size: 28px;
-    margin-top: 10px;
-    text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    line-height: 1.2;
+    text-align: center;
+    margin-left: 0;
 }
 
 /* Intro Section */
@@ -207,4 +213,5 @@ footer {
         font-size: 16px;
     }
 }
+
 
